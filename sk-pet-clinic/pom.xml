@@ -4,7 +4,7 @@
 
 	<groupId>sk.springframework</groupId>
 	<artifactId>sk-pet-clinic</artifactId>
-	<version>0.0.4-SNAPSHOT</version>
+	<version>0.0.4</version>
     <modules>
         <module>petclinicdata</module>
 		<module>petclinicweb</module>
@@ -45,6 +45,6 @@
 	</build>
 	<scm>
 		<developerConnection>scm:git:git@github.com:Shivaranjini-Kumaresh/sk-pet-clinic.git</developerConnection>
-	  <tag>HEAD</tag>
+	  <tag>sk-pet-clinic-0.0.4</tag>
   </scm>
 </project>
