@@ -1,16 +1,10 @@
 package sk.springframework.skpetclinic.model;
 
-public class PetType {
+import lombok.Data;
 
-	private String name;
+@Data
+public class PetType extends BaseEntity {
 
-	public String getName() {
-		return name;
-	}
+    private String name;
 
-	public void setName(String name) {
-		this.name = name;
-	}
-	
-	
 }

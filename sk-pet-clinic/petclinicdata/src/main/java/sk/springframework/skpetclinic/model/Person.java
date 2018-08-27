@@ -1,24 +1,11 @@
 package sk.springframework.skpetclinic.model;
 
-public class Person {
+import lombok.Data;
 
-	private String firstname;
-	private String lastname;
+@Data
+public class Person extends BaseEntity {
 
-	public String getFirstname() {
-		return firstname;
-	}
-
-	public void setFirstname(String firstname) {
-		this.firstname = firstname;
-	}
-
-	public String getLastname() {
-		return lastname;
-	}
-
-	public void setLastname(String lastname) {
-		this.lastname = lastname;
-	}
+    private String firstname;
+    private String lastname;
 
 }
