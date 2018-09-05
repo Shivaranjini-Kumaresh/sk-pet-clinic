@@ -1,7 +1,6 @@
 package sk.springframework.skpetclinic.services.impl;
 
 import sk.springframework.skpetclinic.model.Pet;
-import sk.springframework.skpetclinic.model.Vet;
 import sk.springframework.skpetclinic.services.CrudService;
 import sk.springframework.skpetclinic.services.map.AbstractMapService;
 
