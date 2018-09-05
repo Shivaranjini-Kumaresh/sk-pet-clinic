@@ -1,13 +1,14 @@
 package sk.springframework.skpetclinic.services.impl;
 
-import sk.springframework.skpetclinic.model.Owner;
+import org.springframework.stereotype.Service;
 import sk.springframework.skpetclinic.model.Vet;
-import sk.springframework.skpetclinic.services.CrudService;
+import sk.springframework.skpetclinic.services.VetService;
 import sk.springframework.skpetclinic.services.map.AbstractMapService;
 
 import java.util.Set;
 
-public class VetServiceMapImpl extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+@Service
+public class VetServiceMapImpl extends AbstractMapService<Vet, Long> implements VetService {
 
 
     @Override

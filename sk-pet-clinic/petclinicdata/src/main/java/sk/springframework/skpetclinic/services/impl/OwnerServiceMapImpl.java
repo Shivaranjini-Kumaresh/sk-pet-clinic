@@ -1,12 +1,14 @@
 package sk.springframework.skpetclinic.services.impl;
 
+import org.springframework.stereotype.Service;
 import sk.springframework.skpetclinic.model.Owner;
-import sk.springframework.skpetclinic.services.CrudService;
+import sk.springframework.skpetclinic.services.OwnerService;
 import sk.springframework.skpetclinic.services.map.AbstractMapService;
 
 import java.util.Set;
 
-public class OwnerServiceMapImpl extends AbstractMapService<Owner, Long> implements CrudService<Owner, Long> {
+@Service
+public class OwnerServiceMapImpl extends AbstractMapService<Owner, Long> implements OwnerService {
 
     @Override
     public Owner save(Owner owner) {
@@ -32,5 +34,10 @@ public class OwnerServiceMapImpl extends AbstractMapService<Owner, Long> impleme
     @Override
     public void delete(Owner owner) {
         super.delete(owner);
+    }
+
+    @Override
+    public Owner findByLastName(String lastName) {
+        return null;
     }
 }
